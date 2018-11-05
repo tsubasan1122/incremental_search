@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Users</h1>
+<input type=form id="form" placeholder="ユーザー名を入力してください" style="width: 250px;"/>
+<!-- ここから追記 -->
+<ul id="result">
+<!-- この中に<li>デデデ大王</li>みたいに検索候補を追加していきます -->
+</ul>
 
 <table>
   <thead>
@@ -10,7 +14,6 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-
   <tbody>
     <% @users.each do |user| %>
       <tr>
